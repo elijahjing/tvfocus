@@ -45,7 +45,6 @@ public class CenterLinearLayoutManager extends LinearLayoutManager {
                         isScrolling = false;
                         parent.post(mSelectionNotifier);
                     } else if (newState == RecyclerView.SCROLL_STATE_SETTLING) {
-                        //相当于长按  或者  快速滑动吧
                         isScrolling = true;
                     } else {
                         isScrolling = true;
@@ -124,5 +123,8 @@ public class CenterLinearLayoutManager extends LinearLayoutManager {
 
     public void setOnChildSelectedListener(OnChildSelectedListener listener) {
         mChildSelectedListener = listener;
+    }
+    public interface OnChildSelectedListener {
+         void onChildSelected( View view, int position);
     }
 }

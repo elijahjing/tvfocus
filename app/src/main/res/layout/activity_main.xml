@@ -8,10 +8,11 @@
     tools:context=".MainActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/ddd"
+        android:id="@+id/recyclerview_test"
         android:layout_centerInParent="true"
         android:layout_width="400dp"
-        android:layout_height="1000px"></android.support.v7.widget.RecyclerView>
+        android:layout_height="1000px">
+    </android.support.v7.widget.RecyclerView>
 
 
 </RelativeLayout>

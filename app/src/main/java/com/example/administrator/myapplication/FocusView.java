@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 
 public class FocusView extends View {
     public int outPadding = 20;
-    private boolean move;
     public static final int TRANSFER_DURATION = 200;
 
     private Point currentPoint = new Point(0, 0, 0, 0);
@@ -35,9 +34,6 @@ public class FocusView extends View {
         setBackgroundResource(imgResID);
         invalidate();
     }
-    public void setMove(boolean move) {
-        this.move = move;
-    }
 
     public void animate(View v){
         animate(v, TRANSFER_DURATION);
@@ -61,9 +57,6 @@ public class FocusView extends View {
     }
 
     public void start(Point targetPoint, int duration){
-        if(move){
-            return;
-        }
         targetPoint.setX(targetPoint.getX() - outPadding);
         targetPoint.setY(targetPoint.getY() - outPadding);
         targetPoint.setWidth(targetPoint.getWidth() + 2 * outPadding);
