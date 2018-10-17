@@ -1,5 +1,5 @@
 # tvfocus
-这个android tv端焦点移动框的控件用法：
+这个是一个android tv端焦点移动框的控件,用法：
 
         final FocusView focusView=new FocusView(this);
         //界面根view
@@ -16,6 +16,8 @@
                 
             }
         });
+        
+        效果图：
 
 ![image](https://github.com/elijahjing/tvfocus/blob/master/app/gif/ezgif-5-6a0801a23dc6.gif )  
 
