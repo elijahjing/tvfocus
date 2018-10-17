@@ -1,12 +1,10 @@
 # tvfocus
 这个android tv端焦点移动框的控件用法：
+
         final FocusView focusView=new FocusView(this);
-     
-     //界面根view
+        //界面根view
         View  rootView  = findViewById(R.id.rootview);
-     
         rootView.addView(focusView);
-    
         Button button =findViewById(R.id.button);
         button.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
